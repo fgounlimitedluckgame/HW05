@@ -11,7 +11,7 @@ Generate parameterized JMeter scripts for the workflow: Login -> Search -> Add t
 * Generated and seeded the database with 200 distinct performance users.
 * Created users.csv, search_terms.csv, and checkout_data.csv.
 * Structured Load, Stress, and Spike configurations adhering to the required thread settings, think times, assertions, and target report listener views.
-* Human Review / Correction: Đã sửa lại JMX template của summary view, thông số test, cấu hình API và response assertion bị sai
+* Human Review / Correction: Đã sửa lại JMX template của summary view, thông số test, cấu hình API và response assertion bị sai. Ngoài ra, đã sửa lại data trong csv nhằm đơn giản hoá quá trình làm
 
 # Interaction 2
 - AI Tool: Antigravity IDE (Gemini 3.5 Flash)
