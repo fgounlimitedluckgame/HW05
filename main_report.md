@@ -7,8 +7,6 @@
 - **Lớp:** 23KTPM4
 - **Repository GitHub:** https://github.com/fgounlimitedluckgame/HW05
 
-# Báo cáo kiểm thử hiệu năng
-
 ---
 
 ## Task 1
