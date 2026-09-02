@@ -30,17 +30,23 @@
 | Endurance | `plans/23127108_Endurance_20260828.jmx` | 30 | 60 giây | 600 giây | Aggregate Report | 700-1500ms |
 
 ### 3. Cấu hình máy tính
-| Hạng mục | Giá trị |
-|---|---|
-| OS | Windows 10 Pro 10.0, 64-bit |
-| Máy | Dell Latitude 7430 |
-| CPU | 12th Gen Intel(R) Core(TM) i7-1255U, ~1.7GHz |
-| RAM | 16384MB ~ 16GB |
+![specs](screenshots/specs.png)
 
-Thông tin chi tiết ở file [specs](specs.png)
+### 4. Hình ảnh các lần thực thi:
+- Load testing:
+![load](screenshots/load%20execution.png)
+
+- Spike testing
+![load](screenshots/spike%20execution.png)
+
+- Stress testing
+![load](screenshots/stress%20execution.png)
+
+- Endurance testing
+![load](screenshots/endurance%20execution.png)
 
 
-### 3. Human review khi AI sinh test plan
+### 5. Human review khi AI sinh test plan
 
 #### Lỗi 1: Phát sinh jmx lỗi ở phần Summary View
 Trong file `generate_jmx.js`, AI đã sử dụng listener xml như sau:
@@ -258,9 +264,9 @@ flowchart TD
 | **Coverage** | Test nhiều endpoint = an toàn hơn | Thời gian chạy tỷ lệ thuận với số endpoint | Ưu tiên critical endpoint |
 
 ### 3.4. Kết luận
-Việc chạy Continuous Regression testing giúp ta phát hiện lỗi và sửa lỗi sớm, từ đó tạo ra sự tự tin khi deploy sản phẩm. Ngoài ra, nó có thể giúp ta tích luỹ baseline theo thời gian, từ đó có được góc nhìn về xu hướng hiệu năng của hệ thống
+- Việc chạy Continuous Regression testing giúp ta phát hiện lỗi và sửa lỗi sớm, từ đó tạo ra sự tự tin khi deploy sản phẩm. Ngoài ra, nó có thể giúp ta tích luỹ baseline theo thời gian, từ đó có được góc nhìn về xu hướng hiệu năng của hệ thống
 
-Trade-off Continuous Regression testing là việc chạy CI sẽ mất thời gian (có thể giảm thiểu được bằng cách thu hẹp phạm vi những artifact cần được kiểm thử), và yếu tố gây nhiễu từ môi trường test có thể ảnh hưởng đến đánh giá regression (có thể giảm thiểu bằng cách cấu hình lại tiêu chí test phù hợp)
+- Trade-off Continuous Regression testing là việc chạy CI sẽ mất thời gian (có thể giảm thiểu được bằng cách thu hẹp phạm vi những artifact cần được kiểm thử), và yếu tố gây nhiễu từ môi trường test có thể ảnh hưởng đến đánh giá regression (có thể giảm thiểu bằng cách cấu hình lại tiêu chí test phù hợp)
 
 
 
