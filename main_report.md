@@ -196,27 +196,27 @@ AI ban đầu viết response để assert cho checkout là `Order created` và 
       db.run("PRAGMA busy_timeout=5000;"); // Wait up to 5s instead of throwing SQLITE_BUSY immediately
   });
 ```
-**Đánh giá:** Feasible
+- **Đánh giá:** Feasible
 
-**Lí do:** Việc dùng WAL giúp thực hiện non-blocking read khi write đang được thực hiện, giảm thiểu `SQLITE_BUSY`
+- **Lí do:** Việc dùng WAL giúp thực hiện non-blocking read khi write đang được thực hiện, giảm thiểu `SQLITE_BUSY`
 
 ---
 
 #### Đề xuất 2: Sử dụng prepared statements
-**Đề xuất:** AI đề xuất sử dụng `db.prepare()` để giảm compliation overhead 
+- **Đề xuất:** AI đề xuất sử dụng `db.prepare()` để giảm compliation overhead 
 
-**Đánh giá:** Partially Feasible (rõ hơn: Không cần thiết trong trường hợp này)
+- **Đánh giá:** Partially Feasible (rõ hơn: Không cần thiết trong trường hợp này)
 
-**Lí do:** Tuy việc dùng `db.prepare` trong SQLite của C hay C++ có thể giúp giảm compliation overhead, `db.prepare()` của `sqlite3` của node.js được xử lý bất đồng bộ giúp giảm thiểu I/O throughput gain
+- **Lí do:** Tuy việc dùng `db.prepare` trong SQLite của C hay C++ có thể giúp giảm compliation overhead, `db.prepare()` của `sqlite3` của node.js được xử lý bất đồng bộ giúp giảm thiểu I/O throughput gain
 
 ---
 
 #### Đề xuất 3: Sử dụng index ở các bảng users, orders, coupon_usage
-**Đề xuất:** Thêm index vào `email` (users), `user_id` (orders), và một composite index gồm `coupon_id` và `user_id` (coupon_usage)
+- **Đề xuất:** Thêm index vào `email` (users), `user_id` (orders), và một composite index gồm `coupon_id` và `user_id` (coupon_usage)
 
-**Đánh giá:** Feasible
+- **Đánh giá:** Feasible
 
-**Lí do:** Việc thêm index tăng tốc độ truy vấn ở các bảng cần đọc nhiều
+- **Lí do:** Việc thêm index tăng tốc độ truy vấn ở các bảng cần đọc nhiều
 
 ---
 
