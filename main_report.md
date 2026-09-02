@@ -170,7 +170,7 @@ AI ban đầu viết response để assert cho checkout là `Order created` và 
 
 #### Misinterpretation #1 — AI kết luận rằng hệ thống tổng thể hoàn toàn chắc chắn khi nhìn vào 0% error rate
 - **Vì sao sai:** Mặc dù 0% không sai về mặt thông số, nhưng dataset dùng để kiểm thử đã được đơn giản hoá khi toàn bộ dữ liệu đều có trong đặc tả và hoàn toàn hợp lệ, tức là đã bỏ qua một số điều như login bị lockout khi login sai 3 lần, hoặc search query không tồn tại.
-- **Sủa lại:** Bỏ kết luận này
+- **Sửa lại:** Bỏ kết luận này
 
 #### Misinterpretation #2 — AI kết luận rằng hệ thống chạy nhanh hơn khi bị spike
 - AI nhìn vào p95 được aggregrate của load và spike lần lượt là 25ms và 12ms để kết luận rằng hệ thống chạy nhanh hơn khi spike
