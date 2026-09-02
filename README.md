@@ -1,6 +1,6 @@
 # HW05
 
-# 1. Test summary report
+## 1. Test summary report
 
 | Scenario | Samples | Duration quan sát | Throughput | Error rate | Average | Median | p90 | p95 | p99 | Min | Max |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -14,7 +14,7 @@
 * Ngưỡng chịu đưng: 25.79 req/s. Tại đây, `error rate` = 0% và `p99` = 26ms
 * Số lượng bug/performance issue phát hiện: 0
 
-# 2. Bảng đánh giá
+## 2. Bảng đánh giá
 | **No.** | **Criteria** | **Grade** | **Self-Assessed Grade** |
 | --- | --- | --- | --- |
 | **1** | Task 1 — Load testing | 30 | 30 |
@@ -25,8 +25,13 @@
 | **6** | Agent Skills | 10 | 10 |
 |  | **Total** | **100** | 100 |
 
-# 3. Demo video
+## 3. Demo video
 * Demo performance testing: https://youtu.be/AUix8f-l1Ds
 * Demo AI agent: https://youtu.be/9xftUUJMjIw
 
-#
+## 4. Ghi chú
+- Hình ảnh được lưu trong thư mục `screenshots`
+- Các file jtl được lưu trong thư mục `jtl_results`
+- Các test plan jmx được lưu trong thư mục `test_plans`
+- Bộ dữ liệu test được lưu trong thư mục `test_data`
+- Report html được lưu trong thư mục `html_results`
