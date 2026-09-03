@@ -24,3 +24,12 @@ Generate parameterized JMeter scripts for the workflow: Login -> Search -> Add t
     - Scanned SUT backend files (`database.js` and `server.js`) to identify missing indexes on `users(email)` and `orders(user_id)`.
     Documented results and analyzed feasibility of SQLite WAL mode vs. connection pools in the artifact
 - Human Review / Correction: Đã đính chính lại các đánh giá của AI về hệ thống dựa trên số liệu nhân được và các đề xuất cải thiện hiệu năng (note: trong phần misinterpretation không tính phần connection pool ở phần cải thiện hiệu năng do AI đã tự nhận định giới hạn trong đề xuất này)
+
+# Interaction 3
+- AI Tool: GitHub Copilot
+- Date & Time: 2026-08-27 11:52 PM
+- User prompt: According to the homework requirements, generate a flow chart of the continuous performance testing implementation
+- Output: The mermaid flow chart
+- Human review: Đã thay đổi các bước sau:
+    - `Run unit and API smoke checks` -> `Allow merge`
+    - `Block or require approval and create issue` -> `Update threshold or baseline metrics`
