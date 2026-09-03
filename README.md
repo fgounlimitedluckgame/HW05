@@ -11,7 +11,7 @@
 
 * Tổng số scenario đã chạy: 38,278
 * Các endpoint đã phủ: `POST /api/login`, `GET /api/products?search=...`, `POST /api/cart`, `POST /api/checkout`
-* Ngưỡng chịu đưng: 25.79 req/s. Tại đây, `error rate` = 0% và `p99` = 26ms
+* Ngưỡng chịu đựng: 25.79 req/s. Tại đây, `error rate` = 0% và `p99` = 26ms
 * Số lượng bug/performance issue phát hiện: 0
 
 ## 2. Bảng đánh giá
